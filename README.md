@@ -1,5 +1,7 @@
 # SSAFY 알고리즘 스터디
 * SSAFY 9기 알고리즘 스터디입니다.
+
+# 0️⃣ 스터디 맴버
 <table>
     <tr>
         <td align="center">
