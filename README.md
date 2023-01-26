@@ -1,5 +1,93 @@
 # SSAFY 알고리즘 스터디
 * SSAFY 9기 알고리즘 스터디입니다.
+<table>
+    <tr>
+        <td align="center">
+	    <a href="https://github.com/Chaos0103">
+	    	<img src="https://avatars.githubusercontent.com/u/85945540?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>임우택</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/youbeen2798">
+	    	<img src="https://avatars.githubusercontent.com/u/62228401?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>정유빈</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/zzckckck3">
+	    	<img src="https://avatars.githubusercontent.com/u/65270703?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>이재진</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/yoojinjangjang">
+	    	<img src="https://avatars.githubusercontent.com/u/94024391?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>장유진</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/wjs5025">
+	    	<img src="https://avatars.githubusercontent.com/u/21137298?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>전인혁</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/Chaos0103">
+	    	<img src="https://avatars.githubusercontent.com/u/85945540?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>최영환</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+        <td align="center">
+	    <a href="https://github.com/Chaos0103">
+	    	<img src="https://avatars.githubusercontent.com/u/85945540?v=4?s=100" width="100px;" alt=""/>
+	    	<br/>
+	    	<sub>
+	    	<b>홍진식</b>
+	    	<br/>
+	    	<img src="https://us-central1-progress-markdown.cloudfunctions.net/progress/100"/>
+	        </sub>
+	    </a>
+	    <br />
+	</td>
+    </tr>
+</table>
 
 
 # 1️⃣ 진행 방법
