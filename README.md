@@ -136,13 +136,17 @@ git commit -m "Hello World / 1분"
 
 # ✅ 문제
 <table>
-    <tr align="center">
-        <td>일차</td><td>문제출처</td><td>문제번호</td><td>문제이름</td><td>문제난이도</td><td>문제링크</td>
+    <tr style="text-align: center">
+        <td rowspan="3">1일차</td>
+        <td>BOJ</td><td>14889</td><td>스타트와 링크</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/14889">바로가기</a></td>
     </tr>
-    <!-- 23.01.30 문제 -->
-    <tr align="center">
-        <td rowspan="2">1일차</td>
-	<td>BOJ</td><td>2</td><td>3</td><td>4</td>
-	<td><a href="https://www.naver.com/">바로가기</a></td>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10974</td><td>모든 순열</td><td>실버3</td>
+        <td><a href="https://www.acmicpc.net/problem/10974">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1476</td><td>날짜 계산</td><td>실버5</td>
+        <td><a href="https://www.acmicpc.net/problem/1476">바로가기</a></td>
     </tr>
 </table>
