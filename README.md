@@ -133,3 +133,16 @@ git commit -m "Hello World / 1분"
 	* 왜 이렇게 풀었는지 궁금한 부분
 	* 또 다른 풀이 방식 제시
 * 코드의 일부에다가 코드리뷰를 해도 되고 전체 코드 밑 또는 PR 하나 밑에다 코멘트 작성으로 리뷰를 해도 됩니다.
+
+# ✅ 문제
+<table>
+    <tr align="center">
+        <td>일차</td><td>문제출처</td><td>문제번호</td><td>문제이름</td><td>문제난이도</td><td>문제링크</td>
+    </tr>
+    <!-- 23.01.30 문제 -->
+    <tr align="center">
+        <td rowspan="2">1일차</td>
+	<td>BOJ</td><td>2</td><td>3</td><td>4</td>
+	<td><a href="https://www.naver.com/">바로가기</a></td>
+    </tr>
+</table>
