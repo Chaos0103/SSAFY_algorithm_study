@@ -149,4 +149,18 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>1476</td><td>날짜 계산</td><td>실버5</td>
         <td><a href="https://www.acmicpc.net/problem/1476">바로가기</a></td>
     </tr>
+    <!-- 23.01.31 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">2일차</td>
+        <td>BOJ</td><td>1759</td><td>암호 만들기</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/1759">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>15652</td><td>N과 M(4)</td><td>실버3</td>
+        <td><a href="https://www.acmicpc.net/problem/15652">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10819</td><td>차이를 최대로</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/10819">바로가기</a></td>
+    </tr>
 </table>
