@@ -163,4 +163,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>10819</td><td>차이를 최대로</td><td>실버2</td>
         <td><a href="https://www.acmicpc.net/problem/10819">바로가기</a></td>
     </tr>
+    <!-- 23.02.01 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">3일차</td>
+        <td>BOJ</td><td>1260</td><td>DFS와 BFS</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/1260">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1697</td><td>숨바꼭질</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/1697">바로가기</a></td>
+    </tr>
 </table>
