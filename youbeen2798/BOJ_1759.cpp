@@ -20,16 +20,31 @@ void input() {
 	}
 }
 
+bool check_moum(char c) {
+	if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+		return true;
+	}
+	return false;
+}
 void Combination(vector<char> arr, vector<char> comb, int r, int idx, int depth) {
 	if (r == 0) {
 		sort(comb.begin(), comb.end());
 		
 		string st = "";
+		int moum_num = 0;
+		int zaum_num = 0;
 		for (int i = 0; i < comb.size(); i++) {
+			if (check_moum(comb[i])) {
+				moum_num++;
+			}
+			else {
+				zaum_num++;
+			}
 			st += comb[i];
 		}
-		ans.insert(st);
-//		cout << "\n";
+		if (moum_num >= 1 && zaum_num >= 2) {
+			ans.insert(st);
+		}
 	}
 	else if (depth == arr.size()) {
 		return;
