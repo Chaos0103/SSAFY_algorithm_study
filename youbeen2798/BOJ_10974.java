@@ -17,7 +17,7 @@ public class Main_10974 {
     BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     StringTokenizer st = new StringTokenizer(br.readLine());
 
-    N = Integer.parseInt(st.nextToken()); //ÀÔ·Â °ª
+    N = Integer.parseInt(st.nextToken()); //Ã€Ã”Â·Ã‚ Â°Âª
     perm(0);
   }
   public static void perm(int cnt){
