@@ -17,8 +17,6 @@ class Node {
 }
 public class Main {
 	
-	private static ArrayList<ArrayList<Integer>> graph = new ArrayList<>();
-	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
