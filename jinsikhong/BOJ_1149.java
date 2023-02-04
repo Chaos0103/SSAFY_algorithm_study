@@ -5,6 +5,7 @@ import java.util.Scanner;
 /*
  * 문제 : RGB 거리
  * 풀이시간 : 30분
+ 
  */
 
 public class BOJ_1149 {
