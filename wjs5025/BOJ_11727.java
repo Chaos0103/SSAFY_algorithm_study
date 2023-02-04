@@ -5,17 +5,21 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
-		
+
 		int input = sc.nextInt();
-		int[] memo = new int[input+1];
-		
-		memo[1] = 1;
-		memo[2] = 3;
-		
-		for(int i = 3; i <=input; i++) {
-			memo[i] = (memo[i-1] + memo[i-2] * 2) %10007;
+		int[] memo = new int[input + 1];
+
+		if (input == 1) {
+			System.out.println(1);
+		} else if (input == 2) {
+			System.out.println(3);
+		} else {
+			memo[1] = 1;
+			memo[2] = 3;
+			for (int i = 3; i <= input; i++) {
+				memo[i] = (memo[i - 1] + memo[i - 2] * 2) % 10007;
+			}
+			System.out.println(memo[input]);
 		}
-		System.out.println(memo[input]);
 	}
 }
