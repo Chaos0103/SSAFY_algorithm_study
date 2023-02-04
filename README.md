@@ -197,4 +197,18 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>11052</td><td>카드 구매하기</td><td>실버1</td>
         <td><a href="https://www.acmicpc.net/problem/11052">바로가기</a></td>
     </tr>
+    <!-- 23.02.04 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">6일차</td>
+        <td>BOJ</td><td>1149</td><td>RGB거리</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/1149">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11057</td><td>오르막 수</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/11057">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>15988</td><td>1, 2, 3 더하기 3</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/15988">바로가기</a></td>
+    </tr>
 </table>
