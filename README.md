@@ -189,7 +189,7 @@ git commit -m "Hello World / 1분"
     </tr>
     <!-- 23.02.03 문제 -->
     <tr style="text-align: center">
-        <td rowspan="3">5일차</td>
+        <td rowspan="2">5일차</td>
         <td>BOJ</td><td>11727</td><td>2xn 타일링 2</td><td>실버3</td>
         <td><a href="https://www.acmicpc.net/problem/11727">바로가기</a></td>
     </tr>
