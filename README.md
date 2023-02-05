@@ -211,4 +211,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>15988</td><td>1, 2, 3 더하기 3</td><td>실버2</td>
         <td><a href="https://www.acmicpc.net/problem/15988">바로가기</a></td>
     </tr>
+    <!-- 23.02.06 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">7일차</td>
+        <td>BOJ</td><td>1920</td><td>수 찾기</td><td>실버4</td>
+        <td><a href="https://www.acmicpc.net/problem/1920">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10815</td><td>숫자 카드</td><td>실버5</td>
+        <td><a href="https://www.acmicpc.net/problem/10815">바로가기</a></td>
+    </tr>
 </table>
