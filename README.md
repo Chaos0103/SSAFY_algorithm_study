@@ -221,4 +221,18 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>10815</td><td>숫자 카드</td><td>실버5</td>
         <td><a href="https://www.acmicpc.net/problem/10815">바로가기</a></td>
     </tr>
+    <!-- 23.02.07 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">8일차</td>
+        <td>BOJ</td><td>10816</td><td>숫자 카드 2</td><td>실버4</td>
+        <td><a href="https://www.acmicpc.net/problem/10816">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2110</td><td>공유기 설치</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/2110">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2470</td><td>두 용액</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/2470">바로가기</a></td>
+    </tr>
 </table>
