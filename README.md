@@ -163,4 +163,62 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>10819</td><td>차이를 최대로</td><td>실버2</td>
         <td><a href="https://www.acmicpc.net/problem/10819">바로가기</a></td>
     </tr>
+    <!-- 23.02.01 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">3일차</td>
+        <td>BOJ</td><td>1260</td><td>DFS와 BFS</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/1260">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1697</td><td>숨바꼭질</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/1697">바로가기</a></td>
+    </tr>
+    <!-- 23.02.02 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">4일차</td>
+        <td>BOJ</td><td>4963</td><td>섬의 개수</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/4963">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2667</td><td>단지번호붙이기</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/2667">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>7576</td><td>토마토</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/7576">바로가기</a></td>
+    </tr>
+    <!-- 23.02.03 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">5일차</td>
+        <td>BOJ</td><td>11727</td><td>2xn 타일링 2</td><td>실버3</td>
+        <td><a href="https://www.acmicpc.net/problem/11727">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11052</td><td>카드 구매하기</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/11052">바로가기</a></td>
+    </tr>
+    <!-- 23.02.04 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">6일차</td>
+        <td>BOJ</td><td>1149</td><td>RGB거리</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/1149">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11057</td><td>오르막 수</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/11057">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>15988</td><td>1, 2, 3 더하기 3</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/15988">바로가기</a></td>
+    </tr>
+    <!-- 23.02.06 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">7일차</td>
+        <td>BOJ</td><td>1920</td><td>수 찾기</td><td>실버4</td>
+        <td><a href="https://www.acmicpc.net/problem/1920">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>10815</td><td>숫자 카드</td><td>실버5</td>
+        <td><a href="https://www.acmicpc.net/problem/10815">바로가기</a></td>
+    </tr>
 </table>
