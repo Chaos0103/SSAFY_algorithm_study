@@ -235,4 +235,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>2470</td><td>두 용액</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/2470">바로가기</a></td>
     </tr>
+    <!-- 23.02.08 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">9일차</td>
+        <td>BOJ</td><td>2003</td><td>수들의 합 2</td><td>실버4</td>
+        <td><a href="https://www.acmicpc.net/problem/2003">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2559</td><td>수열</td><td>실버3</td>
+        <td><a href="https://www.acmicpc.net/problem/2559">바로가기</a></td>
+    </tr>
 </table>
