@@ -245,4 +245,18 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>2559</td><td>수열</td><td>실버3</td>
         <td><a href="https://www.acmicpc.net/problem/2559">바로가기</a></td>
     </tr>
+    <!-- 23.02.09 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="3">10일차</td>
+        <td>BOJ</td><td>3273</td><td>두 수의 합</td><td>실버3</td>
+        <td><a href="https://www.acmicpc.net/problem/3273">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2531</td><td>회전 초밥</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/2531">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>1644</td><td>소수의 연속합</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/1644">바로가기</a></td>
+    </tr>
 </table>
