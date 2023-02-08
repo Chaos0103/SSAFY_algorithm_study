@@ -3,6 +3,12 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import static java.lang.Integer.parseInt;
 
+/**
+ * SSAFY 알고리즘 스터디 9일차 - 수들의 합
+ * 30분 소요
+ * @author YoungHwan
+ *
+ */
 public class BOJ_2003 {
 	static int n, m;
 	static int cnt = 0;
