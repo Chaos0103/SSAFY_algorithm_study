@@ -45,7 +45,5 @@ public class BOJ_3273 {
 
 		}
 		System.out.println(cnt);
-		
-		
 	}
 }
