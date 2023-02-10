@@ -13,7 +13,6 @@ import java.util.*;
 public class Main {
 	static int N;
 	static int[][] info;
-	static int max = Integer.MIN_VALUE;
 
 	public static int search() {
 		int cnt = 0;
