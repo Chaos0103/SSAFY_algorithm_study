@@ -307,4 +307,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>11403</td><td>경로 찾기</td><td>실버1</td>
         <td><a href="https://www.acmicpc.net/problem/11403">바로가기</a></td>
     </tr>
+    <!-- 23.02.14 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">15일차</td>
+        <td>BOJ</td><td>3190</td><td>뱀(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/3190">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11403</td><td>문자열 압축(2020 카카오 신입 공채)</td><td>Lv.2</td>
+        <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60057">바로가기</a></td>
+    </tr>
 </table>
