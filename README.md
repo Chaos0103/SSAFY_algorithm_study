@@ -297,4 +297,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>11657</td><td>타임머신</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/11657">바로가기</a></td>
     </tr>
+    <!-- 23.02.14 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">14일차</td>
+        <td>BOJ</td><td>18352</td><td>특정 거리의 도시 찾기</td><td>실버2</td>
+        <td><a href="https://www.acmicpc.net/problem/18352">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>11403</td><td>경로 찾기</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/11403">바로가기</a></td>
+    </tr>
 </table>
