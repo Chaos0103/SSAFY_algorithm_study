@@ -314,7 +314,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/3190">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>PGS</td><td>11403</td><td>문자열 압축(2020 카카오 신입 공채)</td><td>Lv.2</td>
+        <td>PGS</td><td>60057</td><td>문자열 압축(2020 카카오 신입 공채)</td><td>Lv.2</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60057">바로가기</a></td>
     </tr>
 </table>
