@@ -1,6 +1,9 @@
 import java.io.*;
 import java.util.*;
 
+/*
+난 이걸 왜 80분씩이나 했을까?
+*/
 class Solution {
 
 	// 균형잡힌 괄호인가
