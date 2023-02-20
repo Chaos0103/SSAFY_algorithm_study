@@ -307,7 +307,7 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>11403</td><td>경로 찾기</td><td>실버1</td>
         <td><a href="https://www.acmicpc.net/problem/11403">바로가기</a></td>
     </tr>
-    <!-- 23.02.14 문제 -->
+    <!-- 23.02.15 문제 -->
     <tr style="text-align: center">
         <td rowspan="2">15일차</td>
         <td>BOJ</td><td>3190</td><td>뱀(삼성전자 SW 역량테스트)</td><td>골드4</td>
@@ -327,7 +327,7 @@ git commit -m "Hello World / 1분"
         <td>PGS</td><td>60059</td><td>자물쇠와 열쇠(2020 카카오 신입 공채)</td><td>Lv.3</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60059">바로가기</a></td>
     </tr>
-    <!-- 23.02.16 문제 -->
+    <!-- 23.02.17 문제 -->
     <tr style="text-align: center">
         <td rowspan="2">17일차</td>
         <td>BOJ</td><td>14502</td><td>연구소(삼성전자 SW 역량테스트)</td><td>골드4</td>
@@ -337,7 +337,7 @@ git commit -m "Hello World / 1분"
         <td>PGS</td><td>60061</td><td>기둥과 보 설치(2020 카카오 신입 공채)</td><td>Lv.3</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60061">바로가기</a></td>
     </tr>
-    <!-- 23.02.16 문제 -->
+    <!-- 23.02.18 문제 -->
     <tr style="text-align: center">
         <td rowspan="2">18일차</td>
         <td>BOJ</td><td>16234</td><td>인구 이동(삼성전자 SW 역량테스트)</td><td>골드5</td>
@@ -346,5 +346,15 @@ git commit -m "Hello World / 1분"
     <tr style="text-align: center">
         <td>PGS</td><td>60058</td><td>괄호 변환(2020 카카오 신입 공채)</td><td>Lv.2</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60058">바로가기</a></td>
+    </tr>
+    <!-- 23.02.20 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">19일차</td>
+        <td>BOJ</td><td>1717</td><td>집합의 표현</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/1717">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>PGS</td><td>1647</td><td>도시 분할 계획</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/1647">바로가기</a></td>
     </tr>
 </table>
