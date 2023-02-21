@@ -5,7 +5,7 @@ import java.util.*;
 
 /**
  * 크루스칼 부숴버렸습니다
- * 마스터 ㅎ
+ * 마스터 ㅎㅎ
  */
 class Edge implements Comparable<Edge> {
     int cost;
@@ -84,9 +84,5 @@ public class Main {
             }
         }
         System.out.println(result);
-    }
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> bd147b1bf96395a3d3817a9d47ebee7a8e75e2a1
+    }<<<<<<<HEAD
+}=======}>>>>>>>bd147b1bf96395a3d3817a9d47ebee7a8e75e2a1
