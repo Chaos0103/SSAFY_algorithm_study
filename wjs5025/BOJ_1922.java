@@ -84,5 +84,6 @@ public class Main {
             }
         }
         System.out.println(result);
-    }<<<<<<<HEAD
-}=======}>>>>>>>bd147b1bf96395a3d3817a9d47ebee7a8e75e2a1
+
+    }
+}
