@@ -354,7 +354,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/1717">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>PGS</td><td>1647</td><td>도시 분할 계획</td><td>골드4</td>
+        <td>BOJ</td><td>1647</td><td>도시 분할 계획</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/1647">바로가기</a></td>
     </tr>
     <!-- 23.02.21 문제 -->
@@ -364,7 +364,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/1976">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>PGS</td><td>1922</td><td>네트워크 연결</td><td>골드4</td>
+        <td>BOJ</td><td>1922</td><td>네트워크 연결</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/1922">바로가기</a></td>
     </tr>
 </table>
