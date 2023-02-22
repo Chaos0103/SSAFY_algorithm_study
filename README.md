@@ -375,6 +375,6 @@ git commit -m "Hello World / 1분"
     </tr>
     <tr style="text-align: center">
         <td>SEA</td><td>5658</td><td>보물상자 비밀번호(모의 SW 역량테스트)</td><td>.</td>
-        <td><a href="https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWXRUN9KfZ8DFAUo">바로가기</a></td>
+        <td><a href="https://swexpertacademy.com/main/talk/solvingClub/problemSubmitHistory.do?contestProbId=AWXRUN9KfZ8DFAUo&solveclubId=AYXaC3mq8MoDFAQK&problemBoxTitle=%EB%AA%A8%EC%9D%98+SW+%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8&problemBoxCnt=1&probBoxId=AYXaC3mq8MsDFAQK#none">바로가기</a></td>
     </tr>
 </table>
