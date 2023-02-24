@@ -387,4 +387,14 @@ git commit -m "Hello World / 1분"
         <td>SEA</td><td>5658</td><td>벽돌 깨기(모의 SW 역량테스트)</td><td>.</td>
         <td><a href="https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AYXaC3mq8MoDFAQK&contestProbId=AWXRQm6qfL0DFAUo&probBoxId=AYXaC3mq8MsDFAQK&type=PROBLEM&problemBoxTitle=%EB%AA%A8%EC%9D%98+SW+%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8&problemBoxCnt=2">바로가기</a></td>
     </tr>
+    <!-- 23.02.24 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">23일차</td>
+        <td>BOJ</td><td>14500</td><td>테트로미노(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/14500">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>SEA</td><td>5653</td><td>줄기세포배양(모의 SW 역량테스트)</td><td>.</td>
+        <td><a href="https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AYXaC3mq8MoDFAQK&contestProbId=AWXRJ8EKe48DFAUo&probBoxId=AYXaC3mq8MsDFAQK&type=PROBLEM&problemBoxTitle=%EB%AA%A8%EC%9D%98+SW+%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8&problemBoxCnt=3">바로가기</a></td>
+    </tr>
 </table>
