@@ -1,100 +1,122 @@
 #include <iostream>
+#include <set>
+#include <vector>
 #include <queue>
 #include <cstring>
-#include <vector>
 
 using namespace std;
 
-int n, l, r;
-int arr[51][51];
-bool visited[51][51];
-bool changed = false;
-
+int n;
+int map[101][101];
 int dx[4] = { 1,-1,0,0 };
 int dy[4] = { 0,0,1,-1 };
 
-void reset() {
-	changed = false;
-	memset(visited, false, sizeof(visited));
-}
+bool visited[101][101];
+int real_ans = 999999999;
+int dist[101][101]; //ê±°ë¦¬
 
-void bfs(int x, int y) {
-	
-	vector<pair<int, int>> v; //¿¬°áµÈ ³ª¶óµé
-	int sum = 0; //¿¬°áµÈ ³ª¶óµé ÇÕ
+int land_num = 2;
 
-	v.push_back({ x,y });
+void find_lands(int x, int y) {
+	//(x,y)ë¡œë¶€í„° ì—°ê²°ëœ ìœ¡ì§€ë“¤
+
+	set<pair<int, int>> land; //í•œë²ˆì— ì—°ê²°ëœ ìœ¡ì§€ (x,y) ëª¨ìŒ
+
 	queue<pair<int, int>> q;
-	visited[x][y] = true;
-	sum += arr[x][y];
+
 	q.push({ x,y });
+	visited[x][y] = true;
+	map[x][y] = land_num;
 
 	while (!q.empty()) {
 		int a = q.front().first;
 		int b = q.front().second;
-		int num = arr[a][b];
 
 		q.pop();
 
 		for (int i = 0; i < 4; i++) {
 			int nx = a + dx[i];
 			int ny = b + dy[i];
-			int num2 = arr[nx][ny];
-			int diff = abs(num - num2);
 
-			//¹æ¹®ÇÑÀû ¾ø°í Â÷ÀÌ°¡ l°ú r »çÀÌÀÏ¶§
-			if (0 <= nx && nx < n && 0 <= ny && ny < n && !visited[nx][ny]) {
-				if (l <= diff && diff <= r) {
-					q.push({ nx,ny });
-					v.push_back({ nx,ny });
-					visited[nx][ny] = true;
-					sum += arr[nx][ny];
+			if (0 <= nx && nx < n && 0 <= ny && ny < n && !visited[nx][ny] && map[nx][ny] == 1) {
+				visited[nx][ny] = true;
+				q.push({ nx,ny });
+				map[nx][ny] = land_num;
+			}
+		}
+	}
+}
+
+void find_other_land(int x, int y) {
+	//ë‹¤ë¥¸ ìœ¡ì§€ë¥¼ ì°¾ê¸°
+
+	memset(visited, false, sizeof(visited));
+
+	queue <pair<int, int>> q;
+	q.push({ x,y });
+	visited[x][y] = true;
+	dist[x][y] = 0;
+	int now_land_num = map[x][y];
+
+	while (!q.empty()) {
+		int a = q.front().first;
+		int b = q.front().second;
+		int now_dist = dist[a][b];
+
+		q.pop();
+
+		for (int i = 0; i < 4; i++) {
+			int nx = a + dx[i];
+			int ny = b + dy[i];
+
+			pair<int, int> p = { nx,ny };
+			if (0 <= nx && nx < n && 0 <= ny && ny < n && !visited[nx][ny] && map[nx][ny] != now_land_num) {
+				q.push({ nx,ny });
+				visited[nx][ny] = true;
+				dist[nx][ny] = now_dist + 1;
+
+				//ë‹¤ë¥¸ ìœ¡ì§€ë¼ë©´
+				if (map[nx][ny] != 0) {
+					//		cout << "now_dist: " << now_dist << "\n";
+					real_ans = min(real_ans, now_dist);
+					return;
 				}
 			}
 		}
 	}
-
-	int avg = sum / v.size(); //³ª¶ó Æò±Õ
-
-	if (v.size() > 1) {
-		changed = true;
-	}
-	for (int i = 0; i < v.size(); i++) {
-		arr[v[i].first][v[i].second] = avg;
-	}
 }
-
 void solution() {
-
-	int answer = 0;
-	while (true) {
-
-		reset();
-
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if (!visited[i][j]) {
-					bfs(i, j);
-				}
-			}
-		}
-
-		if (!changed) {
-			break;
-		}
-
-		answer++;
-	}
-
-	cout <<  answer;
-}
-
-void input() {
-	cin >> n >> l >> r;
 
 	for (int i = 0; i < n; i++) {
 		for (int j = 0; j < n; j++) {
-			cin >> arr[i][j];
+			if (map[i][j] == 1 && !visited[i][j]) { //ìœ¡ì§€ì´ë©´
+				find_lands(i, j);
+				land_num += 1;
+			}
+		}
+	}
+
+
+	memset(visited, false, sizeof(visited));
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			if (map[i][j] != 0 && !visited[i][j]) { //ìœ¡ì§€ì´ë©´
+				//			cout << "i: " << i << " j: " << j << "\n";
+				find_other_land(i, j);
+			}
+		}
+	}
+
+	cout << real_ans;
+}
+
+void input() {
+	cin >> n;
+
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n; j++) {
+			cin >> map[i][j];
 		}
 	}
 }
@@ -105,4 +127,5 @@ int main() {
 
 	input();
 	solution();
+
 }
