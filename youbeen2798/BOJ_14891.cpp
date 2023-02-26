@@ -1,108 +1,142 @@
 #include <iostream>
-#include <queue>
-#include <cstring>
+#include <deque>
 #include <vector>
 
 using namespace std;
 
-int n, l, r;
-int arr[51][51];
-bool visited[51][51];
-bool changed = false;
+deque <char> dq[4];
 
-int dx[4] = { 1,-1,0,0 };
-int dy[4] = { 0,0,1,-1 };
+int k;
 
-void reset() {
-	changed = false;
-	memset(visited, false, sizeof(visited));
+void real_rotate(int num, int dir) {
+
+
+    if (dir == 1) {
+        //ì‹œê³„ ë°©í–¥ì´ë¼ë©´
+        int back = dq[num].back();
+        dq[num].pop_back();
+        dq[num].push_front(back);
+    }
+    else if (dir == -1) {
+        //ë°˜ì‹œê³„ë°©í–¥ì´ë¼ë©´
+        int front = dq[num].front();
+        dq[num].pop_front();
+        dq[num].push_back(front);
+    }
+}
+void rotate(int num, int dir) {
+
+    vector<pair<int, int>> move_orders;//ì´ë™ ìˆœì„œ
+
+    move_orders.push_back({ num - 1, dir });
+
+    if (num == 1) {
+
+        for (int i = 0; i <= 2; i++) {
+            if (dq[i][2] != dq[i + 1][6]) {
+                dir *= -1;
+                move_orders.push_back({ i + 1, dir });
+                continue;
+            }
+            break;
+        }
+    }
+    else if (num == 2) {
+        if (dq[0][2] != dq[1][6]) { //0ë²ˆê³¼ 1ë²ˆì´ ë§ë¬¼ë¦¬ë©´
+            move_orders.push_back({ 0, dir * -1 });
+        }
+        //2ë²ˆë¶€í„° 4ë²ˆ
+        for (int i = 1; i <= 2; i++) {
+            if (dq[i][2] != dq[i + 1][6]) {
+                dir *= -1;
+                move_orders.push_back({ i + 1, dir });
+                continue;
+            }
+            break;
+        }
+    }
+    else if (num == 3) {
+
+        //3ë²ˆê³¼ 4ë²ˆì´ ë§ë¬¼ë¦¬ë©´
+        if (dq[2][2] != dq[3][6]) {
+            move_orders.push_back({ 3, dir * -1 });
+        }
+        for (int i = 2; i > 0; i--) {
+            if (dq[i][6] != dq[i - 1][2]) {
+                dir *= -1;
+                move_orders.push_back({ i - 1, dir });
+                continue;
+            }
+            break;
+        }
+    }
+
+    else if (num == 4) {
+
+        for (int i = 3; i > 0; i--) {
+            if (dq[i][6] != dq[i - 1][2]) {
+                dir *= -1;
+                move_orders.push_back({ i - 1, dir });
+                continue;
+            }
+            break;
+        }
+    }
+
+
+    for (int i = 0; i < move_orders.size(); i++) {
+        //     cout << move_orders[i].first << " , " << move_orders[i].second << "\n";
+        real_rotate(move_orders[i].first, move_orders[i].second);
+    }
 }
 
-void bfs(int x, int y) {
-	
-	vector<pair<int, int>> v; //¿¬°áµÈ ³ª¶óµé
-	int sum = 0; //¿¬°áµÈ ³ª¶óµé ÇÕ
-
-	v.push_back({ x,y });
-	queue<pair<int, int>> q;
-	visited[x][y] = true;
-	sum += arr[x][y];
-	q.push({ x,y });
-
-	while (!q.empty()) {
-		int a = q.front().first;
-		int b = q.front().second;
-		int num = arr[a][b];
-
-		q.pop();
-
-		for (int i = 0; i < 4; i++) {
-			int nx = a + dx[i];
-			int ny = b + dy[i];
-			int num2 = arr[nx][ny];
-			int diff = abs(num - num2);
-
-			//¹æ¹®ÇÑÀû ¾ø°í Â÷ÀÌ°¡ l°ú r »çÀÌÀÏ¶§
-			if (0 <= nx && nx < n && 0 <= ny && ny < n && !visited[nx][ny]) {
-				if (l <= diff && diff <= r) {
-					q.push({ nx,ny });
-					v.push_back({ nx,ny });
-					visited[nx][ny] = true;
-					sum += arr[nx][ny];
-				}
-			}
-		}
-	}
-
-	int avg = sum / v.size(); //³ª¶ó Æò±Õ
-
-	if (v.size() > 1) {
-		changed = true;
-	}
-	for (int i = 0; i < v.size(); i++) {
-		arr[v[i].first][v[i].second] = avg;
-	}
-}
-
-void solution() {
-
-	int answer = 0;
-	while (true) {
-
-		reset();
-
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n; j++) {
-				if (!visited[i][j]) {
-					bfs(i, j);
-				}
-			}
-		}
-
-		if (!changed) {
-			break;
-		}
-
-		answer++;
-	}
-
-	cout <<  answer;
-}
 
 void input() {
-	cin >> n >> l >> r;
+    for (int i = 0; i < 4; i++) {
+        string input;
+        cin >> input;
 
-	for (int i = 0; i < n; i++) {
-		for (int j = 0; j < n; j++) {
-			cin >> arr[i][j];
-		}
-	}
+        for (int j = 0; j < 8; j++) {
+            dq[i].push_back(input[j]);
+        }
+    }
+
+    cin >> k;
+
+    for (int i = 0; i < k; i++) {
+        {
+            int num, dir;
+            cin >> num >> dir;
+
+            rotate(num, dir);
+        }
+    }
 }
-int main() {
-	ios_base::sync_with_stdio(0);
-	cin.tie(0);
-	cout.tie(0);
 
-	input();
-	solution();
+
+
+void output() {
+
+    int ans = 0;
+
+    int tmp_num = 1;
+    for (int i = 0; i < 4; i++) {
+        if (dq[i][0] == '1') { //Sê·¹ì´ë©´
+            ans += tmp_num;
+            //       cout << "ans: " << ans << " tmp_num: " << tmp_num << "\n";
+        }
+        tmp_num *= 2;
+    }
+    cout << ans;
+
+}
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+
+    input();
+    output();
+
 }
