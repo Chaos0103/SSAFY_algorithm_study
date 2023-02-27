@@ -404,7 +404,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/14891">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>SEA</td><td>2146</td><td>다리 만들기(삼성전자 SW 역량테스트)</td><td>골드3</td>
+        <td>BOJ</td><td>2146</td><td>다리 만들기(삼성전자 SW 역량테스트)</td><td>골드3</td>
         <td><a href="https://www.acmicpc.net/problem/2146">바로가기</a></td>
     </tr>
     <!-- 23.02.27 문제 -->
@@ -414,7 +414,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/20056">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>SEA</td><td>14503</td><td>로봇 청소기(삼성전자 SW 역량테스트)</td><td>골드5</td>
+        <td>BOJ</td><td>14503</td><td>로봇 청소기(삼성전자 SW 역량테스트)</td><td>골드5</td>
         <td><a href="https://www.acmicpc.net/problem/14503">바로가기</a></td>
     </tr>
 </table>
