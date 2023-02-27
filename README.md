@@ -397,4 +397,24 @@ git commit -m "Hello World / 1분"
         <td>SEA</td><td>5653</td><td>줄기세포배양(모의 SW 역량테스트)</td><td>.</td>
         <td><a href="https://swexpertacademy.com/main/talk/solvingClub/problemView.do?solveclubId=AYXaC3mq8MoDFAQK&contestProbId=AWXRJ8EKe48DFAUo&probBoxId=AYXaC3mq8MsDFAQK&type=PROBLEM&problemBoxTitle=%EB%AA%A8%EC%9D%98+SW+%EC%97%AD%EB%9F%89%ED%85%8C%EC%8A%A4%ED%8A%B8&problemBoxCnt=3">바로가기</a></td>
     </tr>
+    <!-- 23.02.25 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">24일차</td>
+        <td>BOJ</td><td>14891</td><td>톱니바퀴(삼성전자 SW 역량테스트)</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/14891">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>SEA</td><td>2146</td><td>다리 만들기(삼성전자 SW 역량테스트)</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/2146">바로가기</a></td>
+    </tr>
+    <!-- 23.02.27 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">25일차</td>
+        <td>BOJ</td><td>20056</td><td>마법사 상어와 파이어볼(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/20056">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>SEA</td><td>14503</td><td>로봇 청소기(삼성전자 SW 역량테스트)</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/14503">바로가기</a></td>
+    </tr>
 </table>
