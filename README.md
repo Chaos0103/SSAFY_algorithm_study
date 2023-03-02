@@ -427,4 +427,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>17281</td><td>⚾(삼성전자 SW 역량테스트)</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/17281">바로가기</a></td>
     </tr>
+    <!-- 23.03.03 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">27일차</td>
+        <td>BOJ</td><td>23288</td><td>주사위 굴리기 2(삼성전자 SW 역량테스트)</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/23288">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>21609</td><td>상어 중학교(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/21609">바로가기</a></td>
+    </tr>
 </table>
