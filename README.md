@@ -434,7 +434,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/23288">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>BOJ</td><td>21609</td><td>상어 중학교(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td>BOJ</td><td>21609</td><td>상어 중학교(삼성전자 SW 역량테스트)</td><td>골드2</td>
         <td><a href="https://www.acmicpc.net/problem/21609">바로가기</a></td>
     </tr>
 </table>
