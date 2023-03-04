@@ -12,9 +12,9 @@ public class SEA_등산로조성 {
 	static int map[][];
 	static boolean visited[][];
 	static int n;
-	static int k;
-	static ArrayList<Node> bongwori = new ArrayList<>();
-	static ArrayList<Node> bongworiBFS = new ArrayList<>(); //bfs용 봉우리
+	static int K;
+	static ArrayList<Node> bongwori;
+	static ArrayList<Node> bongworiBFS; //bfs용 봉우리
 	static int[] dx = {0,0,-1,1};
 	static int[] dy = {-1,1,0,0};
 	static int result;
@@ -26,10 +26,12 @@ public class SEA_등산로조성 {
 		for(int tc = 1; tc <= T; tc++) {
 			st = new StringTokenizer(br.readLine());
 			n = Integer.parseInt(st.nextToken());
-			k = Integer.parseInt(st.nextToken());
+			K = Integer.parseInt(st.nextToken());
 			map = new int[n][n];
 			result =  Integer.MIN_VALUE;
 			int high = Integer.MIN_VALUE;
+			bongwori = new ArrayList<>();
+			bongworiBFS = new ArrayList<>();
 			for(int i = 0; i < n; i++) {
 				st = new StringTokenizer(br.readLine());
 				for(int j = 0; j < n; j++) {
@@ -46,51 +48,27 @@ public class SEA_등산로조성 {
 			
 			for(int i = 0; i < n; i++) {
 				for(int j = 0; j < n; j++) {
-					map[i][j] -= k;
-					if(bongwori.size() == 1 && i == bongwori.get(0).x && j == bongwori.get(0).y) {// 봉우리 사이즈가 1개이고, 깎는 곳이 봉우리랑 같다면
-						int temp = Integer.MIN_VALUE;
-						for(int k = 0; k < n; k++) {
-							for(int z = 0; z < n; z++) {
-								if(temp == map[k][z]) {
-									bongworiBFS.add(new Node(k,z, map[k][z], 1));
-								}else if(high < map[k][z]) {
-									temp = map[k][z];
-									bongworiBFS.clear();
-									bongworiBFS.add(new Node(k,z, map[k][z], 1));
-								}
-							}
-						}
-					}else {
-						for(int k = 0; k < bongwori.size(); k++) {
-							if(i == bongwori.get(k).x && j == bongwori.get(k).y) {//같다면
-								continue;
-							} 
-							bongworiBFS.add(bongwori.get(k));
-						}
+					for(int a = 0; a <= K; a++) {
+						map[i][j] -= a;
+
+						getMoutainLoad();
+						map[i][j] += a;
+						bongworiBFS.clear(); //bfs용 봉우리 초기화
 					}
-					
-//					System.out.println("i : " + i + "/  j : " + j + "  / map[i][j] :  " + map[i][j]);
-//					for(Node n : bongworiBFS) {
-//						System.out.println(n.toString());
-//					}
-					getMoutainLoad();
-					map[i][j] += k;
-					bongworiBFS.clear(); //bfs용 봉우리 초기화
 				}
 			}
 			System.out.println("#" + tc + " " + result);
 		}
 	}
 	
+
+	
 	static void getMoutainLoad() {
-		for(int i = 0; i < bongworiBFS.size(); i++) {
+		for(int i = 0; i < bongwori.size(); i++) {
 			visited = new boolean[n][n];
-			int x = bongworiBFS.get(i).x;
-			int y = bongworiBFS.get(i).y;
+			int x = bongwori.get(i).x;
+			int y = bongwori.get(i).y;
 			dfs(new Node(x,y,map[x][y], 1));
-//			int depth = bfs(new Node(x,y,map[x][y], 1));
-//			result = Math.max(result, depth);
-			
 		}
 	}
 	static void dfs(Node node) {
@@ -117,42 +95,40 @@ public class SEA_등산로조성 {
 	
 	
 	
-	static int bfs(Node node) {
-		Queue<Node> q = new ArrayDeque<>();
-		visited[node.x][node.y] = true;
-		q.offer(node);
-		if(node.x == 2 && node.y == 4) {
-			System.out.println("bfs node ------start-----");
-		}
-		int maxDepth = node.depth;
-		while(!q.isEmpty()) {
-			Node cur = q.poll();
-			if(node.x == 2 && node.y == 4) {
-				System.out.println(cur.toString());
-			}
-			for(int i = 0; i < 4; i++) {
-				int nx = cur.x + dx[i];
-				int ny = cur.y + dy[i];
-				if(nx < 0 || nx >= n || ny < 0 || ny >= n) {
-					continue;
-				}
-				if(visited[nx][ny]) {
-					continue;
-				}
-				if(map[nx][ny] >= cur.high) {
-					continue;
-				}
-				visited[nx][ny] = true;
-				q.offer(new Node(nx, ny, map[nx][ny], cur.depth + 1));
-				maxDepth = Math.max(maxDepth, cur.depth + 1);
-			}
-		}
-		if(node.x == 2 && node.y == 4) {
-			System.out.println("bfs node ------end-----");
-		}
-		return maxDepth;
-		
-	}
+//	static int bfs(Node node) {
+//		Queue<Node> q = new ArrayDeque<>();
+//		visited[node.x][node.y] = true;
+//		q.offer(node);
+//		if(node.x == 2 && node.y == 4) {
+//			System.out.println("bfs node ------start-----");
+//		}
+//		int maxDepth = node.depth;
+//		while(!q.isEmpty()) {
+//			Node cur = q.poll();
+//			if(node.x == 2 && node.y == 4) {
+//				System.out.println(cur.toString());
+//			}
+//			for(int i = 0; i < 4; i++) {
+//				int nx = cur.x + dx[i];
+//				int ny = cur.y + dy[i];
+//				if(nx < 0 || nx >= n || ny < 0 || ny >= n) {
+//					continue;
+//				}
+//				if(visited[nx][ny]) {
+//					continue;
+//				}
+//				if(map[nx][ny] >= cur.high) {
+//					continue;
+//				}
+//				visited[nx][ny] = true;
+//				q.offer(new Node(nx, ny, map[nx][ny], cur.depth + 1));
+//				maxDepth = Math.max(maxDepth, cur.depth + 1);
+//			}
+//		}
+//
+//		return maxDepth;
+//		
+//	}
 	
 	
 	static class Node{
