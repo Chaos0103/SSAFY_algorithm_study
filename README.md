@@ -444,7 +444,7 @@ git commit -m "Hello World / 1분"
         <td><a href="https://www.acmicpc.net/problem/11066">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
-        <td>BOJ</td><td>60063</td><td>블록 이동하기(2020 카카오 신입 공채)</td><td>Lv.3</td>
+        <td>PGS</td><td>60063</td><td>블록 이동하기(2020 카카오 신입 공채)</td><td>Lv.3</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60063">바로가기</a></td>
     </tr>
 </table>
