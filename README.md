@@ -447,4 +447,14 @@ git commit -m "Hello World / 1분"
         <td>PGS</td><td>60063</td><td>블록 이동하기(2020 카카오 신입 공채)</td><td>Lv.3</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/60063">바로가기</a></td>
     </tr>
+    <!-- 23.03.08 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">29일차</td>
+        <td>BOJ</td><td>16947</td><td>서울 지하철 2호선</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/16947">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>PGS</td><td>15685</td><td>드래곤 커브(삼성전자 SW 역량테스트)</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/15685">바로가기</a></td>
+    </tr>
 </table>
