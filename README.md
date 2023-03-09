@@ -457,4 +457,14 @@ git commit -m "Hello World / 1분"
         <td>PGS</td><td>15685</td><td>드래곤 커브(삼성전자 SW 역량테스트)</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/15685">바로가기</a></td>
     </tr>
+    <!-- 23.03.09 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">30일차</td>
+        <td>BOJ</td><td>9663</td><td>N-Queen</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/9663">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>PGS</td><td>42888</td><td>오픈채팅방(2019 카카오 신입 공채)</td><td>Lv.2</td>
+        <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42888">바로가기</a></td>
+    </tr>
 </table>
