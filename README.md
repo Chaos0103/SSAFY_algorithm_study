@@ -477,4 +477,14 @@ git commit -m "Hello World / 1분"
         <td>PGS</td><td>17677</td><td>뉴스 클러스터링(2018 카카오 신입 공채 1차)</td><td>Lv.2</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/17677">바로가기</a></td>
     </tr>
+    <!-- 23.03.11 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">32일차</td>
+        <td>BOJ</td><td>2696</td><td>중앙값 구하기</td><td>골드2</td>
+        <td><a href="https://www.acmicpc.net/problem/2696">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2623</td><td>음악프로그램</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/2623">바로가기</a></td>
+    </tr>
 </table>
