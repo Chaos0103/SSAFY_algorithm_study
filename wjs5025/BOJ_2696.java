@@ -1,9 +1,7 @@
-public package BOJ_2696;
-
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class BOJ_2696 {
 	static int M;
 	static ArrayList<Integer> arr;
 	
