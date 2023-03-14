@@ -507,4 +507,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>2293</td><td>동전 1</td><td>골드5</td>
         <td><a href="https://www.acmicpc.net/problem/2293">바로가기</a></td>
     </tr>
+    <!-- 23.03.15 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">35일차</td>
+        <td>BOJ</td><td>11054</td><td>가장 긴 바이토닉 부분 수열</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/11054">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2294</td><td>동전 2</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/2294">바로가기</a></td>
+    </tr>
 </table>
