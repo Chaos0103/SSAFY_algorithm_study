@@ -1,5 +1,3 @@
-package BOJ_2225;
-
 import java.io.*;
 import java.util.*;
 
@@ -34,7 +32,7 @@ public class Main {
 
 		for (int i = 2; i <= N; i++) {
 			for (int j = 2; j <= K; j++) {
-				dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+				dp[i][j] = (dp[i - 1][j] + dp[i][j - 1])%1000000000;
 			}
 		}
 		
