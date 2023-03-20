@@ -1,6 +1,16 @@
 import java.io.*;
 import java.util.*;
 
+/*
+year = 0;
+
+while (섬개수가 2개이상이 될 때까지)
+	year ++;
+	녹히기
+	섬개수 체크 (dfs)
+
+시간초과로 솔루션참고...
+ */
 class Pos {
 	int r;
 	int c;
