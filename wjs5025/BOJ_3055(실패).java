@@ -1,12 +1,13 @@
+
 import java.io.*;
 import java.util.*;
 
 /*
-고슴도치 이동 시 DFS로 돌린게 문제였습니다.
-BFS로 수정 후 Clear
-
-feat. 유진장
-*/
+ * 도전시간 : 70분
+ * 메모리 초과로 펑~~
+ * 조금만 더하면 해결가능할 거 같은데....
+ * 
+ */
 class Pos {
 	int r;
 	int c;
@@ -75,42 +76,28 @@ public class BOJ_3055 {
 	}
 
 	static void move(Pos now) {
-		Deque<Pos> q = new ArrayDeque<>();
-		// now = 고슴도치
-		q.offer(now);
-		visited[now.r][now.c] = true;
+//		System.out.println("고슴도치 이동 nx : "+now.r+"/ ny : "+now.c +"/ now.t : " +now.time +"/ map.str" + map[now.r][now.c].str);
 
-		while (!q.isEmpty()) {
-			Pos current = q.poll();
+		if (map[now.r][now.c].str.equals("D")) {
+			time = now.time;
+			return;
+		}
 
-			if (current.str.equals("D")) {
-				time = current.time;
-			}
+		for (int i = 0; i < 4; i++) {
+			int nx = now.r + dx[i];
+			int ny = now.c + dy[i];
 
-			for (int i = 0; i < 4; i++) {
-				int nx = current.r + dx[i];
-				int ny = current.c + dy[i];
+			// 범위안에 안들면 패스
+			if (!(nx >= 0 && ny >= 0 && nx < R && ny < C))
+				continue;
+			if (map[nx][ny].str.equals("*") && map[nx][ny].time == 0)
+				continue;
+			if (map[nx][ny].time > now.time || map[nx][ny].str.equals("D")) {
+				move(new Pos(nx, ny, "S", now.time + 1));
 
-				// 범위안에 안들면 패스
-				if (!(nx >= 0 && ny >= 0 && nx < R && ny < C))
-					continue;
-				// 이미 들른곳이면 안가도되니까 패스
-				if (visited[nx][ny])
-					continue;
-				// 원래 물이던 곳이면 못가니까 패스
-				if (map[nx][ny].str.equals("*") && map[nx][ny].time == 0)
-					continue;
-				//
-				if (map[nx][ny].time > current.time || map[nx][ny].str.equals("D") || map[nx][ny].str.equals(".")) {
-					visited[nx][ny] = true;						
-					if (map[nx][ny].str.equals(".")) {
-						q.offer(new Pos(nx, ny, "*", current.time + 1));
-					} else {
-						q.offer(new Pos(nx, ny, map[nx][ny].str, current.time + 1));
-					}
-				}
 			}
 		}
+		// *이고 현재시간보다 크면 이동가능 (같아도안됨)
 	}
 
 	static void floodFill() {
@@ -122,7 +109,7 @@ public class BOJ_3055 {
 
 		while (!q.isEmpty()) {
 			Pos current = q.poll();
-
+			
 			for (int i = 0; i < 4; i++) {
 				int nx = current.r + dx[i];
 				int ny = current.c + dy[i];
@@ -134,11 +121,12 @@ public class BOJ_3055 {
 					continue;
 				if (map[nx][ny].str.equals(".")) {
 					map[nx][ny].str = "*";
-					map[nx][ny].time = current.time + 1;
+					map[nx][ny].time = current.time+1;
 
 					q.offer(map[nx][ny]);
 					visited[nx][ny] = true;
 				}
+
 			}
 		}
 
