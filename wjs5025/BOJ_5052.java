@@ -5,17 +5,16 @@ public class BOJ_5052 {
 	static List<String> list;
 
 	public static void main(String[] args) throws IOException {
-		Scanner sc = new Scanner(System.in);
+		BufferedReader br =new BufferedReader(new InputStreamReader(System.in));
 
-		int tc = sc.nextInt();
+		int tc = Integer.parseInt(br.readLine());
 
 		loop1: for (int t = 0; t < tc; t++) {
 			list = new ArrayList<String>();
-			int N = sc.nextInt();
-			sc.nextLine();
+			int N = Integer.parseInt(br.readLine());
 
 			for (int i = 0; i < N; i++) {
-				list.add(sc.nextLine());
+				list.add(br.readLine());
 			}
 
 			Collections.sort(list);
