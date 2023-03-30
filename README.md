@@ -577,7 +577,7 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>4195</td><td>친구 네트워크</td><td>골드2</td>
         <td><a href="https://www.acmicpc.net/problem/4195">바로가기</a></td>
     </tr>
-    <!-- 23.03.24 문제 -->
+    <!-- 23.03.29 문제 -->
     <tr style="text-align: center">
         <td rowspan="2">42일차</td>
         <td>BOJ</td><td>3020</td><td>개똥벌레</td><td>골드5</td>
@@ -586,5 +586,15 @@ git commit -m "Hello World / 1분"
     <tr style="text-align: center">
         <td>BOJ</td><td>5052</td><td>전화번호 목록</td><td>골드4</td>
         <td><a href="https://www.acmicpc.net/problem/5052">바로가기</a></td>
+    </tr>
+    <!-- 23.03.30 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">43일차</td>
+        <td>BOJ</td><td>10844</td><td>쉬운 계단 수</td><td>실버1</td>
+        <td><a href="https://www.acmicpc.net/problem/10844">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2011</td><td>암호코드</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/2011">바로가기</a></td>
     </tr>
 </table>
