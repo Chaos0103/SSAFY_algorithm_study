@@ -607,4 +607,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>1107</td><td>리모컨</td><td>골드5</td>
         <td><a href="https://www.acmicpc.net/problem/1107">바로가기</a></td>
     </tr>
+    <!-- 23.04.03 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">45일차</td>
+        <td>BOJ</td><td>1719</td><td>택배</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/1719">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>2617</td><td>구슬찾기</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/2617">바로가기</a></td>
+    </tr>
 </table>
