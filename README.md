@@ -620,7 +620,7 @@ git commit -m "Hello World / 1분"
     <!-- 23.04.04 문제 -->
     <tr style="text-align: center">
         <td rowspan="2">46일차</td>
-        <td>PGS</td><td>42891</td><td>무지의 먹방 라이브(2018 카카오 신입 공채 1차)</td><td>Lv.4</td>
+        <td>PGS</td><td>42891</td><td>무지의 먹방 라이브(2019 카카오 신입 공채)</td><td>Lv.4</td>
         <td><a href="https://school.programmers.co.kr/learn/courses/30/lessons/42891">바로가기</a></td>
     </tr>
     <tr style="text-align: center">
