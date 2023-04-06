@@ -637,4 +637,14 @@ git commit -m "Hello World / 1분"
         <td>BOJ</td><td>2211</td><td>네트워크 복구</td><td>골드2</td>
         <td><a href="https://www.acmicpc.net/problem/2211">바로가기</a></td>
     </tr>
+    <!-- 23.04.06 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">48일차</td>
+        <td>BOJ</td><td>2467</td><td>용액</td><td>골드5</td>
+        <td><a href="https://www.acmicpc.net/problem/2467">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>13701</td><td>중복 제거</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/2211">13701</a></td>
+    </tr>
 </table>
