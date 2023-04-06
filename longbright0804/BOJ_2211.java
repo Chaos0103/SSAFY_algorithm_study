@@ -8,9 +8,6 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
-/**
- * 내일 다시 풀이
- */
 public class BOJ_2211 {
     static class Node implements Comparable<Node> {
         int index;
@@ -25,49 +22,52 @@ public class BOJ_2211 {
         public int compareTo(Node o) {
             return Integer.compare(cost, o.cost);
         }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "index=" + index +
+                    ", cost=" + cost +
+                    '}';
+        }
     }
 
     static final int INF = (int) 1e9;
-    static int N, M;
-    static int[] d;
-    static ArrayList<ArrayList<Node>> graph;
-    static ArrayList<ArrayList<Node>> path;
+    static int N, M, k;
+    static int[] d, path;
+    static ArrayList<ArrayList<Node>> graph = new ArrayList<>();
+    static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
-        // 초기화
+        init();
+        process();
+        print(k, sb);
+    }
+
+    private static void init() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         N = Integer.parseInt(st.nextToken());
         M = Integer.parseInt(st.nextToken());
-        // 최단거리 테이블 초기화
         d = new int[N + 1];
+        path = new int[N + 1];
         Arrays.fill(d, INF);
-        // 그래프, 경로 초기화
-        graph = new ArrayList<>();
-        path = new ArrayList<>();
         for (int i = 0; i <= N; i++) {
             graph.add(new ArrayList<>());
-            path.add(new ArrayList<>());
         }
-
         for (int i = 0; i < M; i++) {
             st = new StringTokenizer(br.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            int b = Integer.parseInt(st.nextToken());
-            int c = Integer.parseInt(st.nextToken());
-            graph.get(a).add(new Node(b, c));
-            graph.get(b).add(new Node(a, c));
+            int from = Integer.parseInt(st.nextToken());
+            int to = Integer.parseInt(st.nextToken());
+            int cost = Integer.parseInt(st.nextToken());
+            graph.get(from).add(new Node(to, cost));
+            graph.get(to).add(new Node(from, cost));
         }
+    }
 
-        // 다익스트라 알고리즘 수행
+    private static void process() {
         dijkstra(1);
-        System.out.println(Arrays.toString(d));
-        for (ArrayList<Node> nodes : path) {
-            System.out.println("---------");
-            for (Node node : nodes) {
-                System.out.println(node.index + " " + node.cost);
-            }
-        }
+        setResults();
     }
 
     private static void dijkstra(int start) {
@@ -75,21 +75,33 @@ public class BOJ_2211 {
         pq.add(new Node(start, 0));
         d[start] = 0;
         while (!pq.isEmpty()) {
-            Node cur = pq.poll();
-            int curIdx = cur.index;
-            int curCost = cur.cost;
+            Node current = pq.poll();
+            int curIdx = current.index;
+            int curCost = current.cost;
             if (d[curIdx] < curCost) continue;
             ArrayList<Node> nextNodes = graph.get(curIdx);
             for (Node next : nextNodes) {
                 int nextIdx = next.index;
                 int cost = d[curIdx] + next.cost;
-                if (d[nextIdx] > cost) {
+                if (cost < d[nextIdx]) {
                     d[nextIdx] = cost;
+                    path[nextIdx] = curIdx;
                     pq.add(new Node(nextIdx, cost));
-                    path.get(curIdx).add(new Node(curIdx, nextIdx));
-                    path.get(nextIdx).add(new Node(nextIdx, curIdx));
                 }
             }
         }
+    }
+
+    private static void setResults() {
+        for (int i = 1; i <= N; i++) {
+            if (path[i] == 0) continue;
+            k++;
+            sb.append(i).append(" ").append(path[i]).append("\n");
+        }
+    }
+
+    private static void print(int k, StringBuilder sb) {
+        System.out.println(k);
+        System.out.println(sb);
     }
 }
