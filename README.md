@@ -645,6 +645,16 @@ git commit -m "Hello World / 1분"
     </tr>
     <tr style="text-align: center">
         <td>BOJ</td><td>13701</td><td>중복 제거</td><td>골드4</td>
-        <td><a href="https://www.acmicpc.net/problem/2211">13701</a></td>
+        <td><a href="https://www.acmicpc.net/problem/13701">바로가기</a></td>
+    </tr>
+    <!-- 23.04.07 문제 -->
+    <tr style="text-align: center">
+        <td rowspan="2">49일차</td>
+        <td>BOJ</td><td>14391</td><td>종이 조각</td><td>골드3</td>
+        <td><a href="https://www.acmicpc.net/problem/14391">바로가기</a></td>
+    </tr>
+    <tr style="text-align: center">
+        <td>BOJ</td><td>20040</td><td>사이클 게임</td><td>골드4</td>
+        <td><a href="https://www.acmicpc.net/problem/20040">바로가기</a></td>
     </tr>
 </table>
