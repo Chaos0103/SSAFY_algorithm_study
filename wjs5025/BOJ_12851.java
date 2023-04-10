@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.*;
 
@@ -19,7 +18,7 @@ class Pos {
 
 }
 
-public class BOJ_12851 {
+public class Main {
 	static int N, M;
 	static Pos[] map;
 	static boolean[] visited;
